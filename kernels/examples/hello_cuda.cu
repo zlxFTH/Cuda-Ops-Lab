@@ -1,7 +1,7 @@
 #include <cstdio>
 
 __global__ void hello() {
-    printf("%d, block %d, thread %d\n", blockDim.x, blockIdx.x, threadIdx.x);
+    printf("number of threads in a block: %d, blockId: %d, threadId: %d\n", blockDim.x, blockIdx.x, threadIdx.x);
 }
 
 int main() {
